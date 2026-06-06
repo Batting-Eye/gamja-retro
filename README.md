@@ -75,12 +75,6 @@ git clone https://github.com/Batting-Eye/gamja-retro
 cd gamja-retro && bash install.sh
 ```
 
-설치 후 preferences.md를 열어 설정을 채워주세요.
-
-```bash
-open ~/.claude/skills/gamja-retro/references/preferences.md
-```
-
 ---
 
 ## 설정 (preferences.md)
