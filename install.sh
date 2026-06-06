@@ -18,12 +18,17 @@ fi
 echo "🥔 $SKILL_NAME 설치 중..."
 
 # 기존 설치 확인
+PREFS_BACKUP=""
 if [ -d "$INSTALL_DIR" ]; then
   echo "⚠️  기존 설치 발견. 덮어쓸까요? (y/n)"
   read -r answer
   if [ "$answer" != "y" ]; then
     echo "설치 취소됨."
     exit 0
+  fi
+  # preferences.md 백업
+  if [ -f "$INSTALL_DIR/references/preferences.md" ]; then
+    PREFS_BACKUP=$(cat "$INSTALL_DIR/references/preferences.md")
   fi
   rm -rf "$INSTALL_DIR"
 fi
@@ -38,8 +43,11 @@ else
   curl -fsSL "$RAW_BASE/SKILL.md" -o "$INSTALL_DIR/SKILL.md"
 fi
 
-# preferences.md는 항상 빈 템플릿으로 생성 (개인 설정은 레포에 포함하지 않음)
-if [ ! -f "$INSTALL_DIR/references/preferences.md" ]; then
+# preferences.md — 백업 있으면 복원, 없으면 빈 템플릿 생성
+if [ -n "$PREFS_BACKUP" ]; then
+  echo "$PREFS_BACKUP" > "$INSTALL_DIR/references/preferences.md"
+  echo "💾 기존 preferences.md 복원됨."
+else
   cat > "$INSTALL_DIR/references/preferences.md" << 'PREFS'
 user:
   username: # 이름 (회고록에서 호칭으로 사용)
