@@ -1,8 +1,0 @@
-.DS_Store
-*.skill
-__pycache__/
-*.pyc
-.env
-
-# 개인 설정 파일 — 레포에 포함하지 않음
-references/preferences.md
