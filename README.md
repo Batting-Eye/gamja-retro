@@ -48,7 +48,7 @@
 
 ## 시작하기
 
-감자를 호출하세요. 
+감자를 호출하세요.
 
 ```
 /gamja
@@ -56,7 +56,7 @@
 오늘 회고록 써줘
 ```
 
-처음 실행하면 설정 모드가 시작됩니다. 한 번만 설정하면 그 다음부터는 바로 수집 모드로 진입합니다.
+처음 실행하면 설정 모드가 시작됩니다. 설정이 완료되면 업데이트된 SKILL.md 파일을 다운받아 덮어쓰세요. 그 다음부터는 바로 수집 모드로 진입합니다.
 
 ---
 
@@ -75,25 +75,9 @@ git clone https://github.com/Batting-Eye/gamja-retro
 cd gamja-retro && bash install.sh
 ```
 
----
-
-## 설정 (preferences.md)
-
-```
-user:
-  username: # 이름
-
-fetch:
-  source: git    # git / manual
-  range: today   # today / yesterday / custom
-
-output:
-  destination: chat  # notion / file / chat
-  destination_url:   # notion일 때 페이지 URL
-
-etc: |
-  # 추가 요구사항 (말투, 섹션 구성 등)
-```
+설치 후 `/gamja`를 입력해 설정 모드를 시작하세요.  
+설정이 완료되면 감자가 업데이트된 `SKILL.md`를 다운로드로 제공합니다.  
+해당 파일을 `~/.claude/skills/gamja-retro/SKILL.md`에 덮어쓰면 설정이 영구 저장됩니다.
 
 ---
 
