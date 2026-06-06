@@ -48,7 +48,7 @@
 
 ## 시작하기
 
-Claude에서 아무렇게나 불러주세요.
+감자를 호출하세요. 
 
 ```
 /gamja
@@ -79,7 +79,7 @@ cd gamja-retro && bash install.sh
 
 ## 설정 (preferences.md)
 
-```yaml
+```
 user:
   username: # 이름
 
