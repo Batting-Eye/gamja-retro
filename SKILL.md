@@ -93,8 +93,7 @@ Notion 페이지 URL 알려줘.
    ```
 2. **present_files 도구**로 업데이트된 SKILL.md를 즉시 사용자에게 제공하며 안내:
    ```
-   설정 저장 완료! SKILL.md 파일 다운받아서 ~/.claude/skills/gamja-retro/SKILL.md에 덮어써줘.
-   그러면 다음부터 설정 없이 바로 시작돼.
+   설정 저장 완료! SKILL.md 파일 다운받아서 직접 교체하거나 "스킬 저장" 버튼을 눌러줘.
    ```
 3. 위 두 단계 완료 후 수집 모드로 진입
 
