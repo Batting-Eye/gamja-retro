@@ -64,7 +64,11 @@ output.destination이 `notion`이면 (5/6) 이후 URL 추가 질문:
 Notion 페이지 URL 알려줘.
 ```
 
-### 완료 멘트
+### 완료 처리
+설정이 끝나면 수집한 값으로 `references/preferences.md`를 **전체 덮어쓰기(rewrite)** 한다.
+기존 내용은 유지하지 않고 새 값으로 완전히 교체.
+
+완료 멘트:
 ```
 설정 완료! 이제 오늘 작업 내역 가져올게.
 ```
