@@ -7,25 +7,25 @@
 
 ---
 
-## 어떻게 동작해?
+## 동작 방식
 
-감자는 4개의 모드로 순서대로 흘러가.
+감자는 4개의 모드로 순서대로 흘러갑니다.
 
 ```
 설정 모드 (Settings)
-  └─ 처음 실행 시 이름, 언어, 수집 방식, 저장 위치를 설정해
-  
+  └─ 처음 실행 시 이름, 수집 방식, 저장 위치를 설정합니다.
+
 수집 모드 (Fetch)
-  └─ git log를 자동으로 긁어오거나, 직접 오늘 한 일을 붙여넣어
-  
+  └─ git log를 자동으로 가져오거나, 직접 오늘 한 일을 붙여넣습니다.
+
 대화 모드 (Reflect)
-  └─ 감자가 KPT 흐름으로 질문하면서 회고 재료를 같이 캐내
-  
+  └─ 감자가 KPT 흐름으로 질문하면서 회고 재료를 함께 정리합니다.
+
 작성 모드 (Log)
-  └─ 대화 내용을 바탕으로 회고록을 작성하고 Notion / 파일 / 대화창에 저장해
+  └─ 대화 내용을 바탕으로 회고록을 작성하고 Notion / 파일 / 대화창에 저장합니다.
 ```
 
-회고록은 이렇게 생겼어:
+회고록 형식:
 
 ```
 ### 요약
@@ -48,7 +48,7 @@
 
 ## 시작하기
 
-Claude에서 아무렇게나 불러:
+Claude에서 아무렇게나 불러주세요.
 
 ```
 /gamja
@@ -56,11 +56,11 @@ Claude에서 아무렇게나 불러:
 오늘 회고록 써줘
 ```
 
-처음 실행하면 설정 모드가 시작돼. 한 번만 설정하면 그 다음부터는 바로 수집 모드로 진입해.
+처음 실행하면 설정 모드가 시작됩니다. 한 번만 설정하면 그 다음부터는 바로 수집 모드로 진입합니다.
 
 ---
 
-## 설치 (Installation)
+## 설치
 
 ### 방법 1 — curl 원라이너 (권장)
 
@@ -75,7 +75,7 @@ git clone https://github.com/Batting-Eye/gamja-retro
 cd gamja-retro && bash install.sh
 ```
 
-설치 후 preferences.md를 열어 설정을 채워줘:
+설치 후 preferences.md를 열어 설정을 채워주세요.
 
 ```bash
 open ~/.claude/skills/gamja-retro/references/preferences.md
@@ -88,7 +88,6 @@ open ~/.claude/skills/gamja-retro/references/preferences.md
 ```yaml
 user:
   username: # 이름
-  language: ko # ko / en
 
 fetch:
   source: git    # git / manual
@@ -101,16 +100,6 @@ output:
 etc: |
   # 추가 요구사항 (말투, 섹션 구성 등)
 ```
-
----
-
-## 호환 플랫폼
-
-| 플랫폼 | 지원 |
-|---|---|
-| Claude.ai | ✅ |
-| Claude Code | ✅ |
-| Cursor | ✅ |
 
 ---
 
